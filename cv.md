@@ -33,3 +33,23 @@ Skills:
 - GraphQl
 - TypeScript
 - Git.
+
+
+Projects:
+1) https://github.com/excluz1v/particle-animation (Canvas animation)
+2) https://github.com/excluz1v/Table-SPA-backend/ (express, sequelize,mysql)
+3) https://github.com/excluz1v/Table-SPA-frontend (React,formik)
+
+
+Code exsample:
+
+`class Particle{`
+
+        constructor(){
+            this.x = Math.random()*w;
+            this.y = Math.random()*h;
+            this.velocityX = Math.random()*(properties.particleMaxVelocity*2)-properties.particleMaxVelocity;
+            this.velocityY = Math.random()*(properties.particleMaxVelocity*2)-properties.particleMaxVelocity;
+            this.life = Math.random()*properties.particleLife*60;
+           }
+         }
