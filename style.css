@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --fs-xl: clamp(2rem, 3vw + 1rem, 4rem);
+  --fs-400: clamp(0.75rem, 2vw + 0.25rem, 1.5rem);
+  --fs-500: clamp(1.2rem, 1vw + 0.5rem, 2rem);
+}
+body {
+  font-family: Arial sans-serif;
+  font-size: var(--fs-400);
+}
+h1 {
+  font-size: var(--fs-xl);
+}
+h3 {
+  font-size: var(--fs-500);
+}
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 clamp(1rem, 1.5rem, 4rem);
+}
+ul {
+  margin: 0;
+  padding: 0 clamp(0.3rem, 0.5rem, 1rem);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+td:nth-child(2n + 1) {
+  padding-right: clamp(0.5rem, 1rem, 1.25rem);
+}
+.personalInfo-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.personalInfo-image img {
+  max-width: 8rem;
+  padding-right: clamp(1rem, 2rem, 3rem);
+}
+.underline {
+  border-bottom: 2px solid grey;
+}
+.overflow-scroll {
+  overflow: scroll;
+}

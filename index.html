@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container personalInfo">
+      <h1>Curriculum vitae</h1>
+      <div class="personalInfo-wrapper">
+        <div class="personalInfo-image">
+          <img src="./img/1.JPG" alt="photo" />
+        </div>
+        <table class="personalInfo-table">
+          <tr>
+            <td>Firstname:</td>
+            <td>Dmitriy</td>
+          </tr>
+          <tr>
+            <td>Lastname:</td>
+            <td>Gannochka</td>
+          </tr>
+          <tr>
+            <td>English level:</td>
+            <td>B2</td>
+          </tr>
+        </table>
+      </div>
+      <section>
+        <h3 class="underline">Contact info</h3>
+        <ul>
+          <li>- phone number: +77055595458</li>
+          <li>- telegram: +77055595458</li>
+          <li>- skype: live:.cid.2907f9dd4b9b49b6</li>
+          <li>- email: bmd4work@gmail.com</li>
+        </ul>
+      </section>
+    </header>
+    <main class="container">
+      <section>
+        <h3 class="underline">Work experience</h3>
+        <table>
+          <tr>
+            <td>June 2017 - july 2019</td>
+            <td>
+              <details>
+                <summary>
+                  "SSGPO JSC" Rudny, www.erg.kz, Foreman at forging workshop
+                </summary>
+                <ul>
+                  <li>- Contact with the customers</li>
+                  <li>- Controlling for workers, technologies, equipment</li>
+                  <li>
+                    - Forgings and billets production for gears, shafts other
+                    details
+                  </li>
+                </ul>
+              </details>
+            </td>
+          </tr>
+          <tr>
+            <td>May 2021 - july 2021</td>
+            <td>
+              <details>
+                <summary>
+                  "Noorsoft", noorsoft-mobile.ru, trainee frontend developer
+                </summary>
+                - Interfaces development according to the terms of reference
+              </details>
+            </td>
+          </tr>
+          <tr>
+            <td>April 2021 - currently</td>
+            <td>
+              <details>
+                <summary>
+                  "Yandex" Moscow, www.yandex.ru, Assessor-tester
+                </summary>
+                <ul>
+                  <li>
+                    - Conducting manual testing of the site and mobile
+                    applications
+                  </li>
+                  <li>- Registration and description of bugs</li>
+                </ul>
+              </details>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h3 class="underline">Higher education (bachelor)</h3>
+        <table>
+          <tr>
+            <td>2020</td>
+            <td>
+              Nosov Magnitogorsk State Technical University. Speciality -
+              Economy Bachelor
+            </td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>
+              Rudny Industrial Institute. Speciality - Transport, transport
+              techniques, and technologies, Bachelor of Transpor
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h3 class="underline">Skills</h3>
+        <ul>
+          <li>- HTML5</li>
+          <li>- CSS3</li>
+          <li>- Javascript (React,Vue)</li>
+          <li>- Redux</li>
+          <li>- GraphQl</li>
+          <li>- Typescript</li>
+          <li>- Git</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="container">
+      <section>
+        <h3 class="underline">Projects</h3>
+        <ul>
+          <li>
+            1.
+            <a href="https://github.com/excluz1v/particle-animation"
+              >https://github.com/excluz1v/particle-animation</a
+            >
+            (Canvas animation)
+          </li>
+          <li>
+            2.
+            <a href="https://github.com/excluz1v/Table-SPA-backend/"
+              >https://github.com/excluz1v/Table-SPA-backend/</a
+            >
+            (express, sequelize,mysql)
+          </li>
+          <li>
+            3.
+            <a href="https://github.com/excluz1v/Table-SPA-frontend"
+              >https://github.com/excluz1v/Table-SPA-frontend</a
+            >(React,formik)
+          </li>
+        </ul>
+      </section>
+      <section class="overflow-scroll">
+        <h3 class="underline">Code exsample</h3>
+        <pre>
+            <code >
+class Particle{
+    constructor(){
+        this.x = Math.random()*w;
+        this.y = Math.random()*h;
+        this.velocityX = Math.random()*(properties.particleMaxVelocity*2)-properties.particleMaxVelocity;
+        this.velocityY = Math.random()*(properties.particleMaxVelocity*2)-properties.particleMaxVelocity;
+        this.life = Math.random()*properties.particleLife*60;
+        }
+    }
+            </code>
+        </pre>
+      </section>
+    </footer>
+  </body>
+</html>
