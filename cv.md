@@ -34,7 +34,6 @@ Skills:
 - TypeScript
 - Git.
 
-
 Projects:
 1) https://github.com/excluz1v/particle-animation (Canvas animation)
 2) https://github.com/excluz1v/Table-SPA-backend/ (express, sequelize,mysql)
