@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/atom-one-dark.min.css" />
+    <script src="js/script.js"></script>
     <script src="js/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
@@ -22,16 +23,17 @@
   <body>
     <header class="header">
       <div class="header__menu">
-        <div class="header__burger"><span></span></div>
+        <button class="burger__button"><span></span></button>
         <nav class="burger__menu">
           <ul class="header__list">
-            <li><a class="header__link" href="">ABOUT</a></li>
-            <li><a class="header__link" href="">SKILLS</a></li>
-            <li><a class="header__link" href="">WORK EXPERIENCE</a></li>
-            <li><a class="header__link" href="">EDUCATION </a></li>
-            <li><a class="header__link" href="">PROJECTS</a></li>
-            <li><a class="header__link" href="">CODE EXSAMPLE</a></li>
-            <li><a class="header__link" href="">CONTACT INFO</a></li>
+            <li><a class="header__link" href="#about">ABOUT</a></li>
+            <li><a class="header__link" href="#skills">SKILLS</a></li>
+            <li>
+              <a class="header__link" href="#expirience">WORK EXPERIENCE</a>
+            </li>
+            <li><a class="header__link" href="#education">EDUCATION </a></li>
+            <li><a class="header__link" href="#projects">PROJECTS</a></li>
+            <li><a class="header__link" href="#contacts">CONTACT INFO</a></li>
           </ul>
         </nav>
       </div>
@@ -40,7 +42,7 @@
       <div class="personalInfo-image">
         <img src="./img/1.JPG" alt="photo" />
       </div>
-      <section class="content about">
+      <section id="about" class="content about">
         <h3 class="content__header icon-info">About myself</h3>
         <div class="content__body">
           A few years ago I was a simple guy who had no goal, had a boring job,
@@ -50,7 +52,7 @@
           make good money on it. That's how I got into front-end development.
         </div>
       </section>
-      <section class="content skills">
+      <section id="skills" class="content skills">
         <h3 class="content__header icon-fire">Skills</h3>
         <div class="content__body">
           <ul>
@@ -64,7 +66,7 @@
           </ul>
         </div>
       </section>
-      <section class="content contacts">
+      <section id="contacts" class="content contacts">
         <h3 class="content__header icon-phone">Contact info</h3>
         <div class="content__body">
           <ul class="contacts__list">
@@ -107,7 +109,7 @@
         <h1 class="title">Dmitriy Gannochka</h1>
         <h2 class="subtitle">Frontend developer</h2>
       </section>
-      <section class="content expirience">
+      <section id="expirience" class="content expirience">
         <h3 class="content__header icon-briefcase">Work experience</h3>
         <div class="content__body">
           <table>
@@ -160,7 +162,7 @@
           </table>
         </div>
       </section>
-      <section class="content education">
+      <section id="education" class="content education">
         <h3 class="content__header icon-books">Higher education (bachelor)</h3>
         <div class="content__body">
           <table>
@@ -181,7 +183,7 @@
           </table>
         </div>
       </section>
-      <section class="content projects">
+      <section id="projects" class="content projects">
         <h3 class="content__header icon-folder-open">Projects</h3>
         <div class="content__body">
           <ul>

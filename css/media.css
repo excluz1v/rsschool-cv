@@ -1,0 +1,104 @@
+@media (max-width: 767px) {
+  body {
+    padding-top: 50px;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+  .header {
+    height: 50px;
+  }
+  .header__menu {
+    justify-content: space-between;
+  }
+  .burger__button {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-right: 1rem;
+    z-index: 3;
+    background: inherit;
+    border: none;
+  }
+  .burger__button::before,
+  .burger__button::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .burger__button::before {
+    top: 0;
+  }
+  .burger__button::after {
+    bottom: 0;
+  }
+  .burger__button.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .burger__button.active::after {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+  .burger__button.active span {
+    display: none;
+  }
+  .burger__button span {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 8px;
+    transition: all 0.3s ease 0s;
+  }
+  .burger__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #131c20;
+    padding-top: 70px;
+    transition: all 0.4s ease 0s;
+    overflow: auto;
+  }
+  .burger__menu.active {
+    top: 0;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-flow: column-reverse;
+  }
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+  .content {
+    max-width: 100%;
+    padding: 0 clamp(0.5rem, 1rem, 2rem);
+  }
+  .left-side > .content {
+    margin-bottom: 2rem;
+  }
+  .personalInfo-image {
+    padding: 0;
+  }
+  .personalInfo-image img {
+    max-width: 8rem;
+  }
+}
