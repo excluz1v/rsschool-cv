@@ -148,6 +148,39 @@ td:nth-child(2n + 1) {
   padding-right: clamp(0.3rem, 0.5rem, 1.2rem);
   color: #4e4ee6;
 }
+.project__img {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+}
+.project__wrapper {
+  display: flex;
+  position: relative;
+}
+.project__wrapper::before {
+  position: absolute;
+  content: "";
+  opacity: 0.45;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  border-radius: 10px;
+}
+.project__wrapper:hover::before {
+  background-color: #356510;
+}
+.project__info {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  color: #fff;
+  z-index: 2;
+  font-size: 0.7rem;
+}
 .footer {
   display: flex;
   padding: 1rem;

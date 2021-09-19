@@ -11,6 +11,7 @@ window.onload = () => {
     header__list.onclick = function () {
         burger__menu.classList.toggle('active')
         burger__button.classList.toggle('active')
+        body.classList.toggle('lock')
     }
 }
 

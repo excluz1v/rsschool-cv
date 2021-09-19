@@ -42,7 +42,7 @@
       <div class="personalInfo-image">
         <img src="./img/1.JPG" alt="photo" />
       </div>
-      <section id="about" class="content about">
+      <section class="content about" id="about">
         <h3 class="content__header icon-info">About myself</h3>
         <div class="content__body">
           A few years ago I was a simple guy who had no goal, had a boring job,
@@ -52,7 +52,7 @@
           make good money on it. That's how I got into front-end development.
         </div>
       </section>
-      <section id="skills" class="content skills">
+      <section class="content skills" id="skills">
         <h3 class="content__header icon-fire">Skills</h3>
         <div class="content__body">
           <ul>
@@ -66,7 +66,7 @@
           </ul>
         </div>
       </section>
-      <section id="contacts" class="content contacts">
+      <section class="content contacts" id="contacts">
         <h3 class="content__header icon-phone">Contact info</h3>
         <div class="content__body">
           <ul class="contacts__list">
@@ -109,7 +109,7 @@
         <h1 class="title">Dmitriy Gannochka</h1>
         <h2 class="subtitle">Frontend developer</h2>
       </section>
-      <section id="expirience" class="content expirience">
+      <section class="content expirience" id="expirience">
         <h3 class="content__header icon-briefcase">Work experience</h3>
         <div class="content__body">
           <table>
@@ -162,7 +162,7 @@
           </table>
         </div>
       </section>
-      <section id="education" class="content education">
+      <section class="content education" id="education">
         <h3 class="content__header icon-books">Higher education (bachelor)</h3>
         <div class="content__body">
           <table>
@@ -183,29 +183,71 @@
           </table>
         </div>
       </section>
-      <section id="projects" class="content projects">
+      <section class="content projects" id="projects">
         <h3 class="content__header icon-folder-open">Projects</h3>
         <div class="content__body">
           <ul>
             <li>
-              1.
-              <a href="https://github.com/excluz1v/particle-animation"
-                >https://github.com/excluz1v/particle-animation</a
+              <a
+                target="_blank"
+                href="https://social-network-v2.firebaseapp.com/login"
+                ><figure class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="./img/social.png"
+                    alt="social-network Project"
+                  />
+                  <figcaption class="project__info">
+                    <p class="project__info-title">Social-network Project</p>
+                    <p class="project__info-body">
+                      Social network with possibility of creating comments,
+                      adding likes, downloading images. Backend - Node.JS,
+                      frontend - React, database - Google Firebase.
+                    </p>
+                  </figcaption>
+                </figure></a
               >
-              (Canvas animation)
             </li>
             <li>
-              2.
-              <a href="https://github.com/excluz1v/Table-SPA-backend/"
-                >https://github.com/excluz1v/Table-SPA-backend/</a
+              <a target="_blank" href="https://excluz1v.github.io/goSurf/">
+                <figure class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="./img/surf.png"
+                    alt="goSurf Project"
+                  />
+                  <figcaption class="project__info">
+                    <p class="project__info-title">Surf layout</p>
+                    <p class="project__info-body">
+                      Implementation of the layout on the topic of surfing.
+                      Beyond standard technologies like HTML,CSS,JS were used
+                      Gulp, Sass preprocessor.
+                    </p>
+                  </figcaption>
+                </figure></a
               >
-              (express, sequelize,mysql)
             </li>
             <li>
-              3.
-              <a href="https://github.com/excluz1v/Table-SPA-frontend"
-                >https://github.com/excluz1v/Table-SPA-frontend</a
-              >(React,formik)
+              <a
+                target="_blank"
+                href="https://excluz1v.github.io/simon_the_game"
+              >
+                <figure class="project__wrapper">
+                  <img
+                    class="project__img"
+                    src="./img/simonthegame.png"
+                    alt="simonthegame Project"
+                  />
+                  <figcaption class="project__info">
+                    <p class="project__info-title">Simon the game</p>
+                    <p class="project__info-body">
+                      One of many test project based on implementation of game
+                      called 'Simon'. This project requires knowlenge of call
+                      stack, array methods, OOP principes.
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
             </li>
           </ul>
         </div>

@@ -78,6 +78,9 @@
   .header__list li {
     margin: 0 0 10px 0;
   }
+  .project__info {
+    font-size: 0.5rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -100,5 +103,24 @@
   }
   .personalInfo-image img {
     max-width: 8rem;
+  }
+  .project__info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .project__info {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 450px) {
+  .project__info {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 380px) {
+  .project__info-body {
+    display: none;
   }
 }
